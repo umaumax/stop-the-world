@@ -23,10 +23,10 @@ jobs:
             # target:      armv7-unknown-linux-gnueabihf
             # file_name:   libstop_the_world.so
             # artifact_name: libstop_the_world-armv7-unknown-linux-gnueabihf.so
-          # - os:          windows-latest
-            # target:      x86_64-pc-windows-msvc
-            # file_name:   stop_the_world.dll
-            # artifact_name: stop_the_world-x86_64-pc-windows-msvc.dll
+          - os:            windows-latest
+            target:        x86_64-pc-windows-msvc
+            file_name:     stop_the_world.dll
+            artifact_name: stop_the_world-x86_64-pc-windows-msvc.dll
           # - os:          windows-latest
             # target:      x86_64-pc-windows-gnu
             # file_name:   stop_the_world.dll
