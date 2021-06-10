@@ -25,12 +25,12 @@ jobs:
             artifact_name: libstop_the_world-armv7-unknown-linux-gnueabihf.so
           - os:            windows-latest
             target:        x86_64-pc-windows-msvc
-            file_name:     libstop_the_world.dll
-            artifact_name: libstop_the_world-x86_64-pc-windows-msvc.dll
+            file_name:     stop_the_world.dll
+            artifact_name: stop_the_world-x86_64-pc-windows-msvc.dll
           - os:            windows-latest
             target:        x86_64-pc-windows-gnu
-            file_name:     libstop_the_world.dll
-            artifact_name: libstop_the_world-x86_64-unknown-linux-gnu.dll
+            file_name:     stop_the_world.dll
+            artifact_name: stop_the_world-x86_64-unknown-linux-gnu.dll
           - os:            macos-latest
             target:        x86_64-apple-darwin
             file_name:     libstop_the_world.dylib
@@ -52,7 +52,7 @@ jobs:
       - name:              Build
         uses:              actions-rs/cargo@v1
         with:
-          use-cross:       true
+          # use-cross:     true
           command:         build
           args:            --release --target ${{ matrix.target }} --all-features --verbose
 
