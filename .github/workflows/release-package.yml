@@ -42,11 +42,11 @@ jobs:
             file_name:     libstop_the_world.dylib
             artifact_name: libstop_the_world-x86_64-apple-darwin.dylib
             cross:         false
-          - os:            macos-latest
-            target:        aarch64-apple-darwin
-            file_name:     libstop_the_world.dylib
-            artifact_name: libstop_the_world-aarch64-apple-darwin.dylib
-            cross:         true
+          # - os:          macos-latest
+            # target:      aarch64-apple-darwin
+            # file_name:   libstop_the_world.dylib
+            # artifact_name: libstop_the_world-aarch64-apple-darwin.dylib
+            # cross:       true
 
     runs-on:               ${{ matrix.os }}
 
